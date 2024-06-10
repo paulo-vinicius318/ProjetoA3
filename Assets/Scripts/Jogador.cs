@@ -23,10 +23,16 @@ public class Jogador : MonoBehaviour
 
     public TMP_Text pontosText;
 
+    public TMP_Text highscoreText;
+
+    private float highscore;
+
+
     
     void Start()
     {
-        
+        highscore = PlayerPrefs.GetFloat("HIGHSCORE");
+        highscoreText.text = highscore.ToString("Highscore: 0.0");
     }
 
     
@@ -61,6 +67,13 @@ public class Jogador : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Inimigo"))
         {
+            if(pontos > highscore)
+            {
+                highscore = pontos;
+
+                PlayerPrefs.SetFloat("HIGHSCORE", highscore);
+            }
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

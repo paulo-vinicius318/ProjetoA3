@@ -6,17 +6,17 @@ public class movimentar : MonoBehaviour
 {
     public Vector2 direcao;
 
-    public float velocidade;
+    private Jogo jogoScript;
 
-    // Start is called before the first frame update
-    void Start()
+  
+    private void Start()
     {
-        
+        jogoScript = GameObject.Find("Jogo").GetComponent<Jogo>();
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    private void Update()
     {
-        transform.Translate(direcao * velocidade * Time.deltaTime);
+        transform.Translate(direcao * jogoScript.velocidade * Time.deltaTime);
     }
 }
