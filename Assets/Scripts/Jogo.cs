@@ -13,6 +13,7 @@ public class Jogo : MonoBehaviour
 
     public float velocidadeMaxima = 10f;
 
+
     private void Update()
     {
         velocidade = Mathf.Clamp(
@@ -27,5 +28,12 @@ public class Jogo : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         Time.timeScale = 1;
+
     }
+
+    public void IniciarJogo()
+    {
+       
+    }
+
 }

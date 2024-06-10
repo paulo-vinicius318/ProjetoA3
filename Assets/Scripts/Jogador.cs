@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Jogador : MonoBehaviour
 {
@@ -27,13 +28,27 @@ public class Jogador : MonoBehaviour
     private float highscore;
 
     public GameObject reiniciarButton;
+
+    public GameObject inicioGame;
+
+    public TMP_Text jogarText; 
+
+    public TMPro.Button jogarButton;
+
     
     void Start()
     {
         highscore = PlayerPrefs.GetFloat("HIGHSCORE");
         highscoreText.text = highscore.ToString("Highscore: 0.0");
+
+        jogarButton.onClick.AddListener(IniciarJogo);
     }
 
+    public void IniciarJogo()
+    {
+        // código para iniciar o jogo aqui
+        Debug.Log("Jogo iniciado!");
+    }
     
     void Update()
     {
@@ -74,6 +89,7 @@ public class Jogador : MonoBehaviour
             }
 
             reiniciarButton.SetActive(true);
+
 
             Time.timeScale = 0;
 
