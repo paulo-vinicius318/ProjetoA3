@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class Jogador : MonoBehaviour
 {
@@ -15,15 +17,25 @@ public class Jogador : MonoBehaviour
 
     public float distanciaMinimaChao = 1;
 
-    // Start is called before the first frame update
+    private float pontos;
+
+    public float multiplicadorPontos = 1;
+
+    public TMP_Text pontosText;
+
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        pontos += Time.deltaTime * multiplicadorPontos;
+
+        pontosText.text = pontos.ToString("Pontos: 0.0");
+
         if(Input.GetKeyDown(KeyCode.UpArrow))
         {
             Pular();
