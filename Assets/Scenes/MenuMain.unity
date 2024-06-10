@@ -653,8 +653,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CR\xC9DITOS:\nPaulo Vinicius\nGabriel Reinaud\nPedro H. Silva\nKau\xE3
-    Fran\xE7a"
+  m_text: 'CREDITOS:
+
+    Paulo Vinicius
+
+    Gabriel Reinaud
+
+    Pedro H. Silva
+
+    Kaua
+    Franca'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c47b3c3076c08e94dace77c738e200bd, type: 2}
   m_sharedMaterial: {fileID: 8429279787282879220, guid: c47b3c3076c08e94dace77c738e200bd, type: 2}
@@ -663,8 +671,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282913261
-  m_fontColor: {r: 0.9294118, g: 0.06666667, b: 0.28235295, a: 1}
+    rgba: 4283041778
+  m_fontColor: {r: 0.9490197, g: 0.027450982, b: 0.2901961, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

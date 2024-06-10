@@ -28,28 +28,13 @@ public class Jogador : MonoBehaviour
     private float highscore;
 
     public GameObject reiniciarButton;
-
-    public GameObject inicioGame;
-
-    public TMP_Text jogarText; 
-
-    //erro
-    //public TMPro.Button jogarButton;
-
+    
     
     void Start()
     {
         highscore = PlayerPrefs.GetFloat("HIGHSCORE");
         highscoreText.text = highscore.ToString("Highscore: 0.0");
 
-       //erro 
-       // jogarButton.onClick.AddListener(IniciarJogo);
-    }
-
-    public void IniciarJogo()
-    {
-        // código para iniciar o jogo aqui
-        Debug.Log("Jogo iniciado!");
     }
     
     void Update()
