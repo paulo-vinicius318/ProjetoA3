@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diferencaX: 19.14
-  minX: -15.2
+  minX: -16
 --- !u!114 &444591614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diferencaX: 19.14
-  minX: -15.2
+  minX: -16
 --- !u!1 &881519841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &947739829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pedraPrefab: {fileID: 1924083744666370889, guid: 2bd54781c8526134cb7a64a2c266d507, type: 3}
   delayInicial: 1
-  delayEntrePedras: 0.9
+  delayEntrePedras: 1
 --- !u!4 &947739830
 Transform:
   m_ObjectHideFlags: 0
@@ -1239,8 +1239,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968009373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1518, y: 1.0391, z: 10}
-  m_LocalScale: {x: 0.8725, y: 0.5273799, z: 0}
+  m_LocalPosition: {x: 0.0497, y: 0.1394, z: 10}
+  m_LocalScale: {x: 0.53086203, y: 0.5065196, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1275,9 +1275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514ea07124a8a2142b3c830f78fe6796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modificadorVelocidade: 0.2
+  modificadorVelocidade: 0.3
   velocidade: 4.5
-  velocidadeMaxima: 20
+  velocidadeMaxima: 25
 --- !u!4 &1246991091
 Transform:
   m_ObjectHideFlags: 0
