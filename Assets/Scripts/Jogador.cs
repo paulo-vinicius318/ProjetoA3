@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -27,7 +26,7 @@ public class Jogador : MonoBehaviour
 
     private float highscore;
 
-
+    public GameObject reiniciarButton;
     
     void Start()
     {
@@ -74,7 +73,10 @@ public class Jogador : MonoBehaviour
                 PlayerPrefs.SetFloat("HIGHSCORE", highscore);
             }
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            reiniciarButton.SetActive(true);
+
+            Time.timeScale = 0;
+
         }
     }
 }
