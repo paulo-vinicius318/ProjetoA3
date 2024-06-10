@@ -33,7 +33,8 @@ public class Jogador : MonoBehaviour
 
     public TMP_Text jogarText; 
 
-    public TMPro.Button jogarButton;
+    //erro
+    //public TMPro.Button jogarButton;
 
     
     void Start()
@@ -41,7 +42,8 @@ public class Jogador : MonoBehaviour
         highscore = PlayerPrefs.GetFloat("HIGHSCORE");
         highscoreText.text = highscore.ToString("Highscore: 0.0");
 
-        jogarButton.onClick.AddListener(IniciarJogo);
+       //erro 
+       // jogarButton.onClick.AddListener(IniciarJogo);
     }
 
     public void IniciarJogo()

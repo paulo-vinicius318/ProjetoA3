@@ -646,6 +646,8 @@ MonoBehaviour:
   pontosText: {fileID: 2064796974}
   highscoreText: {fileID: 2039823867}
   reiniciarButton: {fileID: 1887367886}
+  inicioGame: {fileID: 0}
+  jogarText: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pedraPrefab: {fileID: 1924083744666370889, guid: 2bd54781c8526134cb7a64a2c266d507, type: 3}
   delayInicial: 1
-  delayEntrePedras: 1
+  delayEntrePedras: 0.8
 --- !u!4 &947739830
 Transform:
   m_ObjectHideFlags: 0
@@ -2011,8 +2013,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282911981
+  m_fontColor: {r: 0.92941177, g: 0.047058824, b: 0.28235295, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2139,15 +2141,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pontos
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c47b3c3076c08e94dace77c738e200bd, type: 2}
+  m_sharedMaterial: {fileID: 8429279787282879220, guid: c47b3c3076c08e94dace77c738e200bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282911981
+  m_fontColor: {r: 0.92941177, g: 0.047058824, b: 0.28235295, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
